@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Arial;
+}
+
+body{
+    padding-top: 75px;
+}
+.nav-contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+    /* LEFT PART */
+
+   
+/* .left-nav{
+    width: 400px;
+} */
+
+.left-nav .nav-one{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-one .order-one{
+    padding: 5px;
+    margin: 10px;
+    list-style: none;
+}
+
+.nav-one .order-one .list-one{
+    float: left;
+    margin: 10px;
+}
+
+.nav-one .order-one .list-one .nav-link{
+   color: #000;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+
+
+
+    /* END OF LEFT PART */
+
+               /* MIDDLE PART */
+.middle-nav{
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.logo-image{
+    width: 50px;
+}
+
+    /* END OF MIDDLE PART */
+
+                 /* RIGHT PART */
+.right-nav{
+    /* width: 150px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.get-button{
+    width: 100px;
+    height: 35px;
+    border-radius: 18px;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #D4D4D6;
+    cursor: pointer;
+}
+
+
+   
+      /* END OF RIGHT PART */
+
+     /* HOME PAGE */
+     .home-page{
+        position: relative;
+     }
+     .banner-dev {
+        background: url(./images/Banner.jpg);
+        height: 85vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 35px;
+        margin: 10px;
+    }
+
+  
+
+    .head-dev{
+        text-align: center;
+        font-size: 35px;
+        font-weight: bolder;
+        margin-bottom: 5px;
+        padding-top: 30px;
+    }
+
+    .head-dev-one{
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .head-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head-button-one{
+        background-color: rgb(29, 165, 29);
+        color: #fff;
+        width: 150px;
+        height: 38px;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .home-computer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .computer-one{
+        width: 470px;
+    }
+
+    .input-home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .input-one{
+        width: 270px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        box-shadow: 2px 2px 5px #000;
+        border-radius: 10px;
+    }
+
+  
+
+    .input-one::placeholder{
+        padding-left: 20px;
+    }
+
+    .button-input{
+        position: absolute;
+        right: 110px;
+    }
+    .inside-input{
+        width: 70px;
+        height: 30px;
+        background-color: #000;
+        border: none;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 10px;
+        transition: 0.3px;
+    }
+
+    .inside-input:hover{
+        background-color: lightblue;
+        color: #000;
+    }
+                /* END OF HOME PAGE */
+
+
+   @media screen and (max-width:414px){
+  
+    .head-dev{
+        font-size: 30px;
+        padding-top: 50px;
+    }
+
+    .banner-dev {
+        height: 70vh;
+        margin: 15px;
+    }
+
+    .head-dev-one{
+        font-size: 12px;
+    }
+   
+    .head-button-one{
+        background-color: rgb(29, 165, 29);
+        color: #fff;
+        width: 130px;
+        height: 38px;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .home-computer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .computer-one{
+        width: 400px;
+    }
+ 
+    .middle-nav{
+        flex: 1;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 300px;
+    }
+
+    .button-input{
+        position: absolute;
+        right: 60px;
+    }
+  
+
+   }
+
+            @media screen and (max-width:390px){
+            
+                .head-dev{
+                    font-size: 30px;
+                    padding-top: 50px;
+                }
+
+                .banner-dev {
+                    height: 70vh;
+                    margin:5px;
+                }
+
+                .head-dev-one{
+                    font-size: 12px;
+                }
+            
+                .head-button-one{
+                    background-color: rgb(29, 165, 29);
+                    color: #fff;
+                    width: 130px;
+                    height: 38px;
+                    border: none;
+                    border-radius: 20px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    font-size: 12px;
+                }
+
+                .home-computer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .computer-one{
+                    width: 400px;
+                }
+            
+                .middle-nav{
+                    flex: 1;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 300px;
+                }
+
+                .button-input{
+                    position: absolute;
+                    right: 60px;
+                }
+            
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+         /* SMALL SCREEN */
+
+      @media screen and (max-width:800px){
+  
+        .left-nav{
+            display: none;
+        }
+.menu-dev{
+    display: block;
+}
+.menu-dev{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-one{
+    width: 35px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.logo-image{
+    width: 40px;
+}
+
+.middle-nav{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.home-computer-two{
+    display: none;
+}
+.home-computer{
+display: block;
+}
+
+      }
+
+
+             /* END OF SMALL SCREEN */
+
+                   /* LADGE SCREEN */
+
+@media screen and (min-width:900px){
+    .home-computer{
+        display: none;
+        }
+
+        .head-dev{
+            font-size: 40px;
+            padding-top: 30px;
+        }
+
+        .home-computer-two{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+.banner-dev{
+    position: relative;
+}
+        .computer-one{
+            width: 750px;
+            position: absolute;
+            bottom: 15px;
+
+        }
+
+          .button-input{
+        position: absolute;
+        right: 120px;
+    }
+
+    .input-home{
+        position: relative;
+    }
+    .button-input{
+        position: absolute;
+        right: 220px;
+        bottom: -348px;
+    }
+  
+    .input-div{
+        position: absolute;
+        bottom: -350px;
+    }
+
+    .input-one{
+        width: 450px;
+        height: 45px;
+    }
+    .inside-input{
+        width: 90px;
+        height: 40px;
+    }
+}
+        @media screen and (min-width:960px){
+            .home-computer{
+                display: none;
+                }
+
+                .head-dev{
+                    font-size: 40px;
+                    padding-top: 30px;
+                }
+
+                .home-computer-two{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+        .banner-dev{
+            position: relative;
+        }
+                .computer-one{
+                    width: 750px;
+                    position: absolute;
+                    bottom: 15px;
+
+                }
+
+                .button-input{
+                position: absolute;
+                right: 120px;
+            }
+
+            .input-home{
+                position: relative;
+            }
+            .button-input{
+                position: absolute;
+                right: 250px;
+                bottom: -348px;
+            }
+        
+            .input-div{
+                position: absolute;
+                bottom: -350px;
+            }
+
+            .input-one{
+                width: 450px;
+                height: 45px;
+            }
+            .inside-input{
+                width: 90px;
+                height: 40px;
+            }
+        }
+
+
+        @media screen and (min-width:1000px){
+            .home-computer{
+                display: none;
+                }
+
+                .head-dev{
+                    font-size: 40px;
+                    padding-top: 30px;
+                }
+
+                .home-computer-two{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+        .banner-dev{
+            position: relative;
+        }
+                .computer-one{
+                    width: 750px;
+                    position: absolute;
+                    bottom: 15px;
+
+                }
+
+                .button-input{
+                position: absolute;
+                right: 120px;
+            }
+
+            .input-home{
+                position: relative;
+            }
+            .button-input{
+                position: absolute;
+                right: 450px;
+                bottom: -348px;
+            }
+        
+            .input-div{
+                position: absolute;
+                bottom: -350px;
+            }
+
+            .input-one{
+                width: 450px;
+                height: 45px;
+            }
+            .inside-input{
+                width: 90px;
+                height: 40px;
+            }
+
+            .menu-dev{
+                display: none;
+            }
+        }
+
+
+            /* END OF LADGE SCREEN */
